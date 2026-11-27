@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your next great escape with Roamly. Explore hand-picked destinations and simple travel packages.">
+  <title>Roamly — Find your somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Roamly home"><span class="brand-mark">r</span> roamly<span class="brand-period">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a class="nav-contact" href="#contact">Let's plan <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="A mountain beneath a star-filled night sky"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content container">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> A little more out there</p>
+        <h1>Find your<br>somewhere<span class="coral-dot">.</span></h1>
+        <p class="hero-copy">The world is wide, and your next favourite place is waiting. Let's find it together.</p>
+        <a class="button button-coral" href="#destinations">Explore destinations <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-caption"><span class="caption-dot"></span> Somewhere under the stars</div>
+      <a class="hero-scroll" href="#destinations" aria-label="Scroll to destinations"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="container intro-inner">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER</p>
+        <h2>Less scrolling.<br><span>More <em>wandering.</em></span></h2>
+        <p class="intro-copy">From slow mornings by the sea to big-city nights, we make finding a trip feel like part of the fun.</p>
+      </div>
+    </section>
+
+    <section class="destinations section-pad" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD PLACES</p>
+            <h2>Somewhere <em>beautiful.</em></h2>
+          </div>
+          <p class="section-note">A few places we can't stop thinking about.</p>
+        </div>
+        <div class="search-wrap">
+          <label for="destination-search">Find a destination</label>
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="destination-search" type="search" placeholder="Try Bali, Italy, or anywhere…" autocomplete="off">
+            <span class="search-hint">SEARCH</span>
+          </div>
+        </div>
+        <div class="destination-grid" id="destination-grid">
+          <article class="destination-card" data-name="amalfi coast italy europe">
+            <a class="destination-image image-amalfi" href="#contact" aria-label="Ask about the Amalfi Coast"></a>
+            <div class="destination-info">
+              <p class="destination-location">ITALY <span>·</span> EUROPE</p>
+              <h3>Amalfi Coast</h3>
+              <p>Sun-warmed villages, lemon groves, and that impossibly blue sea.</p>
+              <a class="text-link" href="#contact">Let's go <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="destination-card" data-name="kyoto japan asia">
+            <a class="destination-image image-kyoto" href="#contact" aria-label="Ask about Kyoto"></a>
+            <div class="destination-info">
+              <p class="destination-location">JAPAN <span>·</span> ASIA</p>
+              <h3>Kyoto</h3>
+              <p>Quiet temples, tiny tea houses, and streets made for getting lost.</p>
+              <a class="text-link" href="#contact">Let's go <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="destination-card" data-name="bali indonesia asia">
+            <a class="destination-image image-bali" href="#contact" aria-label="Ask about Bali"></a>
+            <div class="destination-info">
+              <p class="destination-location">INDONESIA <span>·</span> ASIA</p>
+              <h3>Bali</h3>
+              <p>Jungle mornings, ocean afternoons, and room to breathe in between.</p>
+              <a class="text-link" href="#contact">Let's go <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="destination-card" data-name="marrakech morocco africa">
+            <a class="destination-image image-marrakech" href="#contact" aria-label="Ask about Marrakech"></a>
+            <div class="destination-info">
+              <p class="destination-location">MOROCCO <span>·</span> AFRICA</p>
+              <h3>Marrakech</h3>
+              <p>Spice-scented souks, hidden courtyards, and colour at every turn.</p>
+              <a class="text-link" href="#contact">Let's go <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No places match that search yet. Try another destination.</p>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container quote-inner">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <p>The best stories<br>start with <em>let's go.</em></p>
+        <span class="quote-stamp">GO<br>WANDER<br>WONDER</span>
+      </div>
+    </section>
+
+    <section class="packages section-pad" id="packages">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> EASY DOES IT</p>
+            <h2>A trip that <em>fits you.</em></h2>
+          </div>
+          <p class="section-note">Good plans, no guesswork. Pick a pace and we'll take it from there.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="package-number">01</div>
+            <p class="package-label">A LONG WEEKEND</p>
+            <h3>The Little Escape</h3>
+            <p class="package-description">A change of scene, a slower pace, and three lovely days away.</p>
+            <div class="package-bottom"><span>3 nights</span><strong>From $499</strong></div>
+            <a class="package-link" href="#contact" aria-label="Enquire about The Little Escape">↗</a>
+          </article>
+          <article class="package-card package-featured">
+            <span class="popular-tag">THE PEOPLE'S FAVOURITE</span>
+            <div class="package-number">02</div>
+            <p class="package-label">A PROPER GETAWAY</p>
+            <h3>The Far & Away</h3>
+            <p class="package-description">A week to explore, unwind, and come home with stories.</p>
+            <div class="package-bottom"><span>7 nights</span><strong>From $1,299</strong></div>
+            <a class="package-link" href="#contact" aria-label="Enquire about The Far and Away">↗</a>
+          </article>
+          <article class="package-card">
+            <div class="package-number">03</div>
+            <p class="package-label">TAKE THE LONG WAY</p>
+            <h3>The Whole Story</h3>
+            <p class="package-description">Two weeks to go beyond the highlights and really settle in.</p>
+            <div class="package-bottom"><span>14 nights</span><strong>From $2,499</strong></div>
+            <a class="package-link" href="#contact" aria-label="Enquire about The Whole Story">↗</a>
+          </article>
+        </div>
+        <p class="price-note">Prices are starting estimates per person and may vary by destination and travel dates.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-photo" role="img" aria-label="A city skyline glowing after dark"></div>
+      <div class="contact-panel">
+        <div class="contact-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR TURN</p>
+          <h2>Got a place<br>in <em>mind?</em></h2>
+          <p class="contact-intro">Tell us a little about your trip and we'll help you take the first step.</p>
+          <form id="enquiry-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" placeholder="e.g. Alex Morgan" required minlength="2" autocomplete="name">
+                <small class="field-error" id="name-error"></small>
+              </div>
+              <div class="form-field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+                <small class="field-error" id="email-error"></small>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="destination">Where are you dreaming of?</label>
+              <select id="destination" name="destination" required>
+                <option value="">Choose a destination</option>
+                <option value="Amalfi Coast">Amalfi Coast, Italy</option>
+                <option value="Kyoto">Kyoto, Japan</option>
+                <option value="Bali">Bali, Indonesia</option>
+                <option value="Marrakech">Marrakech, Morocco</option>
+                <option value="Somewhere else">Somewhere else</option>
+              </select>
+              <small class="field-error" id="destination-error"></small>
+            </div>
+            <div class="form-field">
+              <label for="message">Anything else? <span>(optional)</span></label>
+              <textarea id="message" name="message" rows="3" placeholder="When you're thinking of going, who's coming along…"></textarea>
+            </div>
+            <button class="button button-coral submit-button" type="submit">Send an enquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-note">This demo form validates your details in your browser; it doesn't send or store them.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">r</span> roamly<span class="brand-period">.</span></a>
+      <p>Made for the places that stay with you.</p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+      <span class="copyright">© 2026 ROAMLY TRAVEL</span>
+    </div>
+  </footer>
+</body>
+</html>
